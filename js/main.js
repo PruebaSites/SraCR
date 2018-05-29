@@ -25,3 +25,13 @@ function openMenu(){
 
 	}
 }
+
+$( document ).ready(function() {
+    var heights = $(".height-max").map(function() {
+        return $(this).height();
+    }).get(),
+
+    maxHeight = Math.max.apply(null, heights);
+
+    $(".height-max").height(maxHeight);
+});

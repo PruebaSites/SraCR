@@ -343,3 +343,54 @@ header{
     font-weight: bold;
     text-shadow: 2px 4px #615c5c8c;
 }
+
+/* Noticias */
+
+.news{
+    padding: 4em 0;
+}
+
+.title-news{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #4d4d4d;
+    margin-bottom: 20px;
+}
+
+.news-img{
+    background-position: 50% 20%;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    background-image: url('../img/news.png');
+}
+
+.bg-gray{
+    background-color: #dadada;
+}
+
+
+.txt-content-news h4{
+    font-weight: bold;
+}
+
+.padding-top-5{
+    padding-top: 5em;
+}
+
+.read-more{
+    font-size: 1.5em;
+    background-color: #cb809d;
+    border-color: #cb809d;
+    padding: 5px 35px;
+}
+
+.read-more:hover,
+.read-more:focus,
+.btn-success:active{
+    background-color: #a55d79;
+    border-color: #a55d79;
+    outline: 0;
+}
