@@ -10,9 +10,19 @@ h4{
     margin: 0;
 }
 
+.txt-white{
+    color: #ffffff;
+}
+
+
+.font-26{
+    font-size: 26px;
+}
+
+
 header{
     background-color: #000000;
-    padding: 2em 0;
+    padding: 2em 0 1em 0;
 }
 
 .navbar-default{
@@ -95,30 +105,37 @@ header{
 }
 
 
+#liste1 li:nth-child(7) a,
+#liste li:nth-child(7)  a,
+#liste1 li:nth-child(8) a,
+#liste li:nth-child(8)  a{
+    padding: 12px 0;
+}
+
 #liste li:nth-child(1){
-    -webkit-animation: fadeOut 1.60s linear forwards;
+    animation: fadeOut 1.60s linear forwards;
 }
 #liste li:nth-child(2){
-    -webkit-animation: fadeOut 1.40s linear forwards;
+   animation: fadeOut 1.40s linear forwards;
 }
 #liste li:nth-child(3){
-    -webkit-animation: fadeOut 1.20s linear forwards;
+   animation: fadeOut 1.20s linear forwards;
 }
 #liste li:nth-child(4){
-    -webkit-animation: fadeOut 1s linear forwards;
+    animation: fadeOut 1s linear forwards;
 }
 
 #liste li:nth-child(5){
-    -webkit-animation: fadeOut .80s linear forwards;
+    animation: fadeOut .80s linear forwards;
 }
 #liste li:nth-child(6){
-    -webkit-animation: fadeOut .60s linear forwards;
+    animation: fadeOut .60s linear forwards;
 }
 #liste li:nth-child(7){
-    -webkit-animation: fadeOut .40s linear forwards;
+   animation: fadeOut .40s linear forwards;
 }
 #liste li:nth-child(8){
-    -webkit-animation: fadeOut .20s linear forwards;
+    animation: fadeOut .20s linear forwards;
 }
 
 
@@ -148,6 +165,7 @@ header{
     cursor: pointer;
     overflow: hidden;
     float: right;
+    margin-top: 8%;
   }
 
   .in-btn-menu-responsive{
@@ -207,3 +225,55 @@ header{
     margin-bottom: -2.5px; 
     transform: rotate(-45deg);
   }
+
+
+/*   Banner-principal */
+
+.banner-wrapper{
+    background-image: url("../img/banner-principal.png");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 639px;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-wrapper::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/brush_white.png);
+    background-position: center 140%;
+    background-repeat: repeat-x;
+}
+
+.logotipo{
+    width: auto;
+    display: inline-block;
+    position: absolute;
+    left: 46%;
+    bottom: 0;
+    background: #ffffff;
+    padding: 0.5em;
+    border-radius: 75px 75px 0 0;
+    z-index: 999;
+    text-align: center;
+}
+
+/* .img-wrapper img{
+    width: 100%;
+} */
+
+.logotipo img{
+    border-radius: 75px 75px 0 0;
+}
+
+
+/* ABOUT-US */
+
+.about-us{
+    padding: 5em 2em 2em 2em;
+}
