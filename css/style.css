@@ -357,7 +357,8 @@ header{
     margin-bottom: 20px;
 }
 
-.news-img{
+.news-img-first,
+.news-img-second{
     background-position: 50% 20%;
     background-size: cover;
     width: 100%;
@@ -366,6 +367,15 @@ header{
     overflow: hidden;
     background-image: url('../img/news.png');
 }
+
+.news-img-first{
+    background-image: url('../img/news.png');
+}
+
+.news-img-second{
+    background-image: url('../img/news-2.png');
+}
+
 
 .bg-gray{
     background-color: #dadada;
