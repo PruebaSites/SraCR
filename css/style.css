@@ -355,6 +355,7 @@ header{
     text-transform: uppercase;
     color: #4d4d4d;
     margin-bottom: 20px;
+    font-family: "Helvetica-Bold";
 }
 
 .news-img-first,
@@ -409,4 +410,9 @@ header{
 
 .margin-bottom-2{
     margin-bottom: 2em;
+}
+
+.img-wrapper{
+    height: 250px;
+    text-align: center;
 }

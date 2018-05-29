@@ -34,4 +34,14 @@ $( document ).ready(function() {
     maxHeight = Math.max.apply(null, heights);
 
     $(".height-max").height(maxHeight);
+
+
+    var heights = $(".img-wrapper").map(function() {
+        return $(this).height();
+    }).get(),
+
+    maxHeight = Math.max.apply(null, heights);
+
+    $(".img-wrapper").height(maxHeight);
+
 });
