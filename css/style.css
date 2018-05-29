@@ -14,11 +14,21 @@ h4{
     color: #ffffff;
 }
 
+.txt-pink{
+    color: #a81b80;
+}
 
 .font-26{
     font-size: 26px;
 }
 
+.font-txt-general{
+    font-family: "Helvetica-Medium";
+}
+
+p{
+    font-size: 17px;
+}
 
 header{
     background-color: #000000;
@@ -275,5 +285,14 @@ header{
 /* ABOUT-US */
 
 .about-us{
-    padding: 5em 2em 2em 2em;
+    padding: 3em 5em;
 }
+
+.title-great{
+    font-family: "Great Vibes";
+}
+
+.font-60{
+    font-size: 60px;
+}
+
