@@ -23,7 +23,7 @@ h4{
 }
 
 .font-txt-general{
-    font-family: "Helvetica-Medium";
+    font-family: "Helvetica";
 }
 
 p{
@@ -256,7 +256,7 @@ header{
     width: 100%;
     height: 100%;
     background-image: url(../img/brush_white.png);
-    background-position: center 125%;
+    background-position: center 150%;
     background-repeat: repeat-x;
 }
 
@@ -302,47 +302,107 @@ header{
 
 /* GALERIA */
 
-.galery-img,
-.inscriptions-img{
-    background-position: center;
-    background-size: cover;
+.hovereffect {
     width: 100%;
-    height: 400px;
-    position: relative;
+    height: 100%;
+    float: left;
     overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+  }
+  
+  .hovereffect .overlay {
+    position: absolute;
+    overflow: hidden;
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 10%;
+    border-bottom: 1px solid #FFF;
+    border-top: 1px solid #FFF;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0,1);
+    -ms-transform: scale(0,1);
+    transform: scale(0,1);
+  }
+  
+  .hovereffect:hover .overlay {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  
+  .hovereffect img {
+    display: block;
+    position: relative;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+  
+  .hovereffect:hover img {
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+    filter: brightness(0.3);
+    -webkit-filter: brightness(0.3);
+  }
+  
+  .hovereffect h2 {
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    font-size: 3em;
+    background-color: transparent;
+    color: #FFF;
+    padding: 1em 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0,-100%,0);
+    transform: translate3d(0,-100%,0);
+    text-shadow: 2px 3px 0px rgba(45, 42, 42, 0.64);
+  }
+  
+  .hovereffect a, .hovereffect p {
+    color: #FFF;
+    padding: 1em 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0);
+  }
+  
+  .hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+
+.col-heigth{
+    height: 350px;
 }
 
-.galery-img{
-    background-image: url('../img/galeria.png');
-}
 
-.inscriptions-img{
-    background-image: url('../img/inscripciones.png');
-}
+
+
+
+
+
+
+
+
 
 .not-padding-col{
     padding: 0;
 }
 
-.overlay{
-    position: absolute;
-    width: 100%;
-    height: 400px;
-    top: 0;
-    background:#00000061;
-}
 
-.title-galery{
-    position: absolute;
-    top: 46%;
-    left: 35%;
-    color: #ffffff;
-    z-index: 999;
-    text-transform: uppercase;
-    font-size: 50px;
-    font-weight: bold;
-    text-shadow: 2px 4px #615c5c8c;
-}
 
 /* Noticias */
 
@@ -355,7 +415,7 @@ header{
     text-transform: uppercase;
     color: #4d4d4d;
     margin-bottom: 20px;
-    font-family: "Helvetica-Bold";
+    font-family: "Helvetica";
 }
 
 .news-img-first,
@@ -456,7 +516,7 @@ footer{
 
 .tel-email,
 .tel-email a{
-    font-family: "Helvetica-Medium";
+    font-family: "Helvetica";
     font-size: 15px;
     color: #000000;
 }
@@ -464,3 +524,4 @@ footer{
 footer a:hover{
     text-decoration: none !important;
 }
+
