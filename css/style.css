@@ -447,3 +447,20 @@ header{
 footer{
     background-color: #ddb7cb;
 }
+
+.copyright{
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+.tel-email,
+.tel-email a{
+    font-family: "Helvetica-Medium";
+    font-size: 15px;
+    color: #000000;
+}
+
+footer a:hover{
+    text-decoration: none !important;
+}
