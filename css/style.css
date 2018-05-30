@@ -613,13 +613,6 @@ header{
 
 
 
-
-
-
-
-
-
-
 /* PATROCINADORES */
 
 .margin-bottom-2{
@@ -627,13 +620,10 @@ header{
 }
 
 .img-wrapper{
-    height: 120px;
+    height: 100px;   
     text-align: center;
 }
 
-.img-wrapper img{
-    width: 100%;
-}
 
 .patrocinadores{
     background-position: center;
