@@ -304,7 +304,7 @@ header{
 
 .hovereffect {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     float: left;
     overflow: hidden;
     position: relative;
@@ -341,6 +341,7 @@ header{
     position: relative;
     -webkit-transition: all 0.35s;
     transition: all 0.35s;
+    width: 100%;
   }
   
   .hovereffect:hover img {
@@ -384,10 +385,10 @@ header{
     transform: translate3d(0,0,0);
   }
 
-.col-heigth{
+/* .col-heigth{
     height: 350px;
 }
-
+ */
 
 
 
@@ -619,31 +620,16 @@ header{
     margin-bottom: 2em;
 }
 
+.patrocinadores{
+    padding-bottom: 4em;
+    margin-bottom: 2em;
+}
+
 .img-wrapper{
     height: 100px;   
     text-align: center;
 }
 
-
-.patrocinadores{
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 555px;
-    position: relative;
-}
-
-.patrocinadores::after{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(../img/brush_pink.png);
-    background-position: center 240%;
-    background-repeat: repeat-x;
-
-}
 
 .patrocinadores .col-xs-12{
     margin-bottom: 2em;
@@ -653,9 +639,32 @@ header{
 /* FOOTER */
 
 footer{
-    background-color: #ddb7cb;
-    padding: 2em;
+    background: #ddb7cb;
 }
+
+footer{
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+}
+
+footer::before{
+    content: '';
+    position: absolute;
+    bottom: 90%;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/brush_pink.png);
+    background-position: center 20%;
+    background-repeat: repeat-x;
+
+}
+
+.bgpink{
+    padding-top: 2em;
+}
+
 
 .copyright{
     font-weight: bold;
