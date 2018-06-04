@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="css/imagehover.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/mediaquerys.css">
+  <link rel="stylesheet" href="css/thumbnail-slider.css">
+  <link rel="stylesheet" href="css/thumbs2.css">
 </head>
 <body>
     <header>
@@ -67,6 +69,130 @@
         </div>
     </header>
     <div class="section-wrapper-images">
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                       <!--start-->
+    <div style="padding:260px 0;background:#333;">
+            <div id="thumbnail-slider">
+                <div class="inner">
+                    <ul>
+                        <li>
+                            <a class="thumb" href="img/fiesta-fun2010/foto-1.png"></a>
+                        </li>
+                        <li>
+                            <a class="thumb" href="img/fiesta-fun2010/foto2.png"></a>
+                        </li>
+                        <li>
+                            <a class="thumb" href="img/fiesta-fun2010/foto-1.png"></a>
+                        </li>
+                        <li>
+                            <a class="thumb" href="img/fiesta-fun2010/foto2.png"></a>
+                        </li>
+                        <li>
+                            <a class="thumb" href="img/fiesta-fun2010/foto-1.png"></a>
+                        </li>
+                        <li>
+                            <a class="thumb" href="img/fiesta-fun2010/foto2.png"></a>
+                        </li>
+                        <li>
+                            <a class="thumb" href="img/fiesta-fun2010/foto-1.png"></a>
+                        </li>
+                        <li>
+                            <a class="thumb" href="img/fiesta-fun2010/foto2.png"></a>
+                        </li>
+                        <li>
+                            <a class="thumb" href="img/fiesta-fun2010/foto-1.png"></a>
+                        </li>
+                        <li>
+                            <a class="thumb" href="img/fiesta-fun2010/foto2.png"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="thumbs2" style="display:none;">
+                <div class="inner">
+                    <ul>
+                        <li>
+                            <a class="thumb" href="img/fiesta-fun2010/foto-1.png"></a>
+                        </li>
+                        <li>
+                            <a class="thumb" href="img/fiesta-fun2010/foto2.png"></a>
+                        </li>
+                        <li>
+                            <a class="thumb" href="img/fiesta-fun2010/foto-1.png"></a>
+                        </li>
+                        <li>
+                            <a class="thumb" href="img/fiesta-fun2010/foto2.png"></a>
+                        </li>
+                        <li>
+                            <a class="thumb" href="img/fiesta-fun2010/foto-1.png"></a>
+                        </li>
+                        <li>
+                            <a class="thumb" href="img/fiesta-fun2010/foto2.png"></a>
+                        </li>
+                        <li>
+                            <a class="thumb" href="img/fiesta-fun2010/foto-1.png"></a>
+                        </li>
+                        <li>
+                            <a class="thumb" href="img/fiesta-fun2010/foto2.png"></a>
+                        </li>
+                        <li>
+                            <a class="thumb" href="img/fiesta-fun2010/foto-1.png"></a>
+                        </li>
+                        <li>
+                            <a class="thumb" href="img/fiesta-fun2010/foto2.png"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="closeBtn">CLOSE</div>
+            </div>
+    
+            <script>
+                //Note: this script should be placed at the bottom of the page, or after the slider markup. It cannot be placed in the head section of the page.
+                var thumbs1 = document.getElementById("thumbnail-slider");
+                var thumbs2 = document.getElementById("thumbs2");
+                var closeBtn = document.getElementById("closeBtn");
+                var slides = thumbs1.getElementsByTagName("li");
+                for (var i = 0; i < slides.length; i++) {
+                    slides[i].index = i;
+                    slides[i].onclick = function (e) {
+                        var li = this;
+                        var clickedEnlargeBtn = false;
+                        if (e.offsetX > 220 && e.offsetY < 25) clickedEnlargeBtn = true;
+                        if (li.className.indexOf("active") != -1 || clickedEnlargeBtn) {
+                            thumbs2.style.display = "block";
+                            mcThumbs2.init(li.index);
+                        }
+                    };
+                }
+    
+                thumbs2.onclick = closeBtn.onclick = function (e) {
+                    //This event will be triggered only when clicking the area outside the thumbs or clicking the CLOSE button
+                    thumbs2.style.display = "none";
+                };
+            </script>
+        </div>
+        <!--end-->
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Modal -->
+
+
         <div class="container-fluid not-padding-col">
             <div class="clearfix">
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 not-padding-col">
@@ -74,7 +200,7 @@
                         <img class="img-responsive" src="img/Galeria/fiesta-funda-2010.png" alt="">
                         <div class="overlay">
                             <h2>Fiesta fundación 2010</h2>
-                            <a class="info" href="#">Ver más imagenes</a>
+                            <a class="info" href="#" data-toggle="modal" data-target="#exampleModal">Ver más imagenes</a>
                         </div>
                     </div>
                 </div>
@@ -128,6 +254,7 @@
     </div>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/thumbnail-slider.js"></script>  
     <script src ="js/main.js"></script>
 </body>
 
