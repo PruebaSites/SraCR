@@ -90,7 +90,32 @@
 
 @media(min-width:768px){
     #thumbnail-slider ul li{
-        width: 400px !important;
-        height: 300px !important;
+        width: 470px !important;
+        height: 330px !important;
+    }
+
+    .modal-content{
+        background-color: #333;
+    }
+
+    .modal-dialog{
+        width: 100%;
+        margin: 90px auto;
+    }
+
+    .modal-header{
+        border-bottom: 1px solid #333;
+    }
+    .modal-footer{
+        border-top: 1px solid #333;
+    }
+
+    .btn-secondary,
+    .btn-secondary:hover,
+    .btn-secondary:focus,
+    .btn-secondary:active{
+        background-color: #333;
+        color: #fff;
+        outline: 0cm;
     }
 }
