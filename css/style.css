@@ -719,7 +719,7 @@ footer a:hover{
     top:0;
     left:0;
     opacity:0;
-    background-color:rgba(0,0,0,0.5);
+    background-color:#ddb7cbb5;
     -webkit-transition:all .4s ease-in-out;
     transition:all .4s ease-in-out
     }
@@ -737,7 +737,7 @@ footer a:hover{
     text-align:center;
     position:relative;
     font-size:24px;
-    background:rgba(0,0,0,0.6);
+    background:rgba(221, 183, 203, 0.8);
     -webkit-transform:translatey(-100px);
     -ms-transform:translatey(-100px);
     transform:translatey(-100px);
