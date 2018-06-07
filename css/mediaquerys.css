@@ -119,3 +119,9 @@
         outline: 0cm;
     }
 }
+
+@media(max-width:568px) {
+    .banner{
+    background-attachment: scroll;
+    }
+}
