@@ -869,3 +869,13 @@ footer a:hover{
     margin-bottom: 4em;
 }
 
+/* 
+PAGE INSCRIPCIONES */
+
+.banner-inscripcion{
+    background-image: url("../img/banner-inscripcion.png");
+}
+
+.formulario-inscripcion{
+    padding: 2em 0;
+}
