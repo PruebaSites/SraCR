@@ -249,7 +249,8 @@ header{
     overflow: hidden;
 }
 
-.banner-wrapper::after{
+.banner-wrapper::after,
+.banner-historia::after{
     content: '';
     position: absolute;
     bottom: 0;
@@ -826,47 +827,42 @@ footer a:hover{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     min-height: 100%;
-    height: 400px;
+    height: 600px;
 }
 
 .banner {
     background-image: url("../img/banner-historia.png");
 }
 
-.Inicio-Certamen{
-    margin-top: 2em;
-    padding: 2em;
-    background-color: #e4e6e9;
+.primer-año  figcaption,
+.primer-año .imghvr-hinge-up{
+    background-color: #e588b7 !important;
 }
 
-.marco{
-    padding-bottom: 2.125rem;
-    position: relative;
-    width: 100%;
-    text-align: right;
-    border: .25rem solid #d5d7db;
+
+.segundo-año  figcaption,
+.segundo-año .imghvr-hinge-up{
+    background-color: #959698 !important;
 }
 
-.marco img{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    margin-top: -2.25rem;
-    margin-left: 1.4rem;
+.tercer-año  figcaption,
+.tercer-año .imghvr-hinge-up{
+    background-color: #ce178d !important;
 }
 
-.Inicio-Certamen h3,
-.exitos h3{
-    margin-bottom: 2em;
+
+.cuarto-año  figcaption,
+.cuarto-año .imghvr-hinge-up{
+    background-color: #bf8fa8 !important;
 }
 
-.exitos{
-    margin-top: 2em;
-    padding: 2em;
-    margin-bottom: 4em;
+[class^=imghvr-] figcaption{
+    padding: 25px 15px;
+}
+
+figcaption h3{
+    margin-bottom: 20px;
 }
 
 /* 
