@@ -913,3 +913,7 @@ PAGE INSCRIPCIONES */
 .text-noticia a{
     text-decoration: underline;
 }
+
+.noticia-principal{
+    padding: 2em 0 8em 0;
+}
