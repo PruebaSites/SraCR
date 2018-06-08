@@ -250,7 +250,8 @@ header{
 }
 
 .banner-wrapper::after,
-.banner-historia::after{
+.banner-historia::after,
+.banner-noticias::after{
     content: '';
     position: absolute;
     bottom: 0;
@@ -874,4 +875,45 @@ PAGE INSCRIPCIONES */
 
 .formulario-inscripcion{
     padding: 2em 0;
+}
+
+
+
+/* PAGE NOTICIAS */
+
+.banner-noticias{
+    background-image: url("../img/banner-noticias.png");
+}
+
+.content-new{
+    background-color: #f5f5f3;
+}
+
+.col-small-news:nth-child(odd) .text-noticia{
+    background-color: #ebd9e2;
+}
+
+.col-small-news:nth-child(even) .text-noticia{
+    background-color: rgba(149, 150, 152, 0.42);
+}
+
+.text-noticia h5{
+    margin: 0;
+}
+
+.text-noticia{
+    padding: 2em 1em;
+}
+
+.text-noticia p{
+    font-size: 12px;
+    margin-top: 1em;
+}
+
+.text-noticia a{
+    text-decoration: underline;
+}
+
+.noticia-principal{
+    padding: 2em 0 8em 0;
 }

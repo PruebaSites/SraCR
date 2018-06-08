@@ -44,6 +44,25 @@ $( document ).ready(function() {
 
     $(".img-wrapper").height(maxHeight);
 
+
+
+    var heights = $(".col-news").map(function() {
+        return $(this).height();
+    }).get(),
+
+    maxHeight = Math.max.apply(null, heights);
+
+    $(".col-news").height(maxHeight);
+
+
+    var heights = $(".col-small-news").map(function() {
+        return $(this).height();
+    }).get(),
+
+    maxHeight = Math.max.apply(null, heights);
+
+    $(".col-small-news").height(maxHeight);
+
 });
 
 $(window).ready(function(){
