@@ -876,6 +876,10 @@ PAGE INSCRIPCIONES */
 
 /* PAGE NOTICIAS */
 
+.noticia-principal{
+    padding: 3em 0 0 0;
+}
+
 .banner-noticias{
     background-image: url("../img/banner-noticias.png");
 }
@@ -1124,7 +1128,7 @@ PAGE INSCRIPCIONES */
   }
 
 
- /*  ANIMACIONES SCROOLL */
+ /*ANIMACIONES SCROOLL */
  .fast {
     -vendor-animation-duration: 1s;
     -vendor-animation-delay: 0s;
