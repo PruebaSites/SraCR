@@ -966,6 +966,9 @@ PAGE INSCRIPCIONES */
     padding: 2em 0 7em 0;
 }
 
+.contact-information h4{
+    min-height: 40px;
+}
 
 /* PAGE NOTICIAS */
 
