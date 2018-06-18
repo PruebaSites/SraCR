@@ -870,8 +870,101 @@ PAGE INSCRIPCIONES */
 
 .formulario-inscripcion{
     padding: 2em 0;
+    margin-top: 2em;
+    background-color: #f5f5f5;
 }
 
+.form-group i{
+    font-size: 2em;
+    color: #ab6e8e;
+}
+
+.well{
+    border: 0;
+    box-shadow: none;
+}
+
+.form-group button{
+    background-color: #ab6e8e;
+    border-color: #ab6e8e; 
+}
+
+.form-group button:hover,
+.form-group button:focus,
+.form-group button:active{
+    background-color: #9e3f71;
+    border-color: #9e3f71;
+}
+
+
+/* DRAW EFFECT BUTTON */
+
+.draw-border {
+    box-shadow: inset 0 0 0 4px #374850;
+    transition: color 0.25s 0.08333s;
+    position: relative;
+  }
+
+  .draw-border a{
+    color: #374850;
+  }
+  .draw-border::before, .draw-border::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .draw-border::before {
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+  }
+  .draw-border::after {
+    border-top-width: 4px;
+    border-right-width: 4px;
+  }
+  .draw-border:hover a {
+    color: #888;
+    text-decoration: none;
+  }
+  .draw-border:hover::before, .draw-border:hover::after {
+    border-color: #888;
+    transition: border-color 0s, width 0.25s, height 0.25s;
+    width: 100%;
+    height: 100%;
+  }
+  .draw-border:hover::before {
+    transition-delay: 0s, 0s, 0.25s;
+  }
+  .draw-border:hover::after {
+    transition-delay: 0s, 0.25s, 0s;
+  }
+  
+  .draw-border {
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1.5;
+    font: 700 1.2rem 'Helvetica', sans-serif;
+    padding: 1em 2em;
+    letter-spacing: 0.05rem;
+  }
+  .draw-border:focus {
+    outline: 2px dotted #55d7dc;
+  }
+
+.draw-border i{
+    margin-right: 10px;
+}
+
+
+.contact-information{
+    padding: 2em 0 7em 0;
+}
 
 
 /* PAGE NOTICIAS */
