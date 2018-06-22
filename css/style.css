@@ -316,7 +316,6 @@ header{
     overflow: hidden;
     position: relative;
     text-align: center;
-    cursor: default;
   }
   
   .hovereffect .overlay {
@@ -364,7 +363,7 @@ header{
     font-size: 3em;
     background-color: transparent;
     color: #FFF;
-    padding: 1em 0;
+    padding: 2em 0;
     opacity: 0;
     filter: alpha(opacity=0);
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -866,6 +865,7 @@ PAGE INSCRIPCIONES */
 
 .banner-inscripcion{
     background-image: url("../img/banner-inscripcion.png");
+    background-position: 50% 317%;
 }
 
 .formulario-inscripcion{
