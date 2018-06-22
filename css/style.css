@@ -865,6 +865,7 @@ PAGE INSCRIPCIONES */
 
 .banner-inscripcion{
     background-image: url("../img/banner-inscripcion.png");
+    background-position: 50% 317%;
 }
 
 .formulario-inscripcion{
