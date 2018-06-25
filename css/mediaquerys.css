@@ -1,4 +1,8 @@
 @media only screen and (min-width: 1441px){
+
+    p{
+        font-size: 22px;
+    }
     .banner-wrapper{
         background-position: 50% 15%;
     }
@@ -29,6 +33,17 @@
         background-position: 50% -50px;
     }
 
+    .banner-inscripcion:after{
+        background-position: center 173%;
+    }
+    .contact-information {
+        padding: 7em 0 7em 0;
+    }
+
+    .logotipo{
+        left: 49%;
+        bottom: 75px;
+    }
     .overlay-historia h2{
         top: 43%;
         left: 33%;
