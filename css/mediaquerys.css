@@ -29,6 +29,12 @@
         background-position: 50% -50px;
     }
 
+    .overlay-historia h2{
+        top: 43%;
+        left: 33%;
+        font-size: 11vh !important;
+    }
+
 
 }
 
