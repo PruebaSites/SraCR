@@ -795,7 +795,8 @@ footer a:hover{
 }
 
 .banner-galeria{
-    background-image: url("../img/banner-galeria.png");
+    background-image: url("../img/Banner-galeria.jpg");
+    background-position: 50% 0%;
 }
 
 .image-block_1{
