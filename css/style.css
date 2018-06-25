@@ -41,6 +41,12 @@ header{
     border-color: transparent;
 }
 
+.menu-fixed{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
 #menu{
     background: transparent;
     border-color: transparent;
@@ -252,6 +258,7 @@ header{
 
 .banner-wrapper{
     background-image: url("../img/Banners-principales/banner-pequeños/banner-principal.jpg");
+    background-position: 50% 50px;
 }
 
 

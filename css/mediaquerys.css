@@ -3,8 +3,12 @@
     p{
         font-size: 22px;
     }
+
+    #liste li a, #liste1 li a{
+        font-size: 23px;
+    }
     .banner-wrapper{
-        background-position: 50% 15%;
+        background-position: 50% 50px;
     }
     .banner-wrapper::after{
         background-position: center 159%;
