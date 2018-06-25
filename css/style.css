@@ -41,6 +41,12 @@ header{
     border-color: transparent;
 }
 
+.menu-fixed{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
 #menu{
     background: transparent;
     border-color: transparent;
@@ -251,7 +257,8 @@ header{
 }
 
 .banner-wrapper{
-    background-image: url("../img/Banners-principales/banner-pequeños/banner-principal.png");
+    background-image: url("../img/Banners-principales/banner-pequeños/banner-principal.jpg");
+    background-position: 50% 50px;
 }
 
 
@@ -801,7 +808,7 @@ footer a:hover{
 }
 
 .banner-galeria{
-    background-image: url("../img/Banners-principales/banner-grandes/banner-galeria.jpg");
+    background-image: url("../img/Banners-principales/banner-pequeños/Banner-galeria.jpg");
 }
 
 .image-block_1{
@@ -833,7 +840,7 @@ footer a:hover{
 }
 
 .banner-historia{
-    background-image: url("../img/Banners-principales/banner-grandes/banner-historia.jpg");
+    background-image: url("../img/Banners-principales/banner-pequeños/banner-historia.jpg");
 }
 
 .primer-año  figcaption,
@@ -893,7 +900,8 @@ figcaption h3{
 PAGE INSCRIPCIONES */
 
 .banner-inscripcion{
-    background-image: url("../img/Banners-principales/banner-pequeños/banner-inscripcion.png");
+    background-image: url("../img/Banners-principales/banner-pequeños/banner-inscripcion.jpg");
+    background-position: 50% -67px;
 }
 
 .formulario-inscripcion{
@@ -1005,7 +1013,7 @@ PAGE INSCRIPCIONES */
 }
 
 .banner-noticias{
-    background-image: url("../img/Banners-principales/banner-grandes/banner-noticia.jpg");
+    background-image: url("../img/Banners-principales/banner-pequeños/banner-noticia.jpg");
 }
 
 .content-new{
@@ -1248,7 +1256,7 @@ PAGE INSCRIPCIONES */
   }
 
   .banner-nosotros{
-    background-image: url("../img/Banners-principales/banner-pequeños/banner-nosotros.png");
+    background-image: url("../img/Banners-principales/banner-pequeños/banner-somos.jpg");
   }
 
 
