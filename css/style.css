@@ -242,7 +242,6 @@ header{
 /*   Banner-principal */
 
 .banner-wrapper{
-    background-image: url("../img/banner-principal.png");
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -250,6 +249,13 @@ header{
     position: relative;
     overflow: hidden;
 }
+
+.banner-wrapper{
+    background-image: url("../img/Banners-principales/banner-pequeños/banner-principal.png");
+}
+
+
+
 
 .banner-wrapper::after,
 .banner-historia::after,
@@ -795,8 +801,7 @@ footer a:hover{
 }
 
 .banner-galeria{
-    background-image: url("../img/Banner-galeria.jpg");
-    background-position: 50% 0%;
+    background-image: url("../img/Banners-principales/banner-grandes/banner-galeria.jpg");
 }
 
 .image-block_1{
@@ -827,8 +832,8 @@ footer a:hover{
     height: 600px;
 }
 
-.banner {
-    background-image: url("../img/banner-historia.png");
+.banner-historia{
+    background-image: url("../img/Banners-principales/banner-grandes/banner-historia.jpg");
 }
 
 .primer-año  figcaption,
@@ -865,8 +870,7 @@ figcaption h3{
 PAGE INSCRIPCIONES */
 
 .banner-inscripcion{
-    background-image: url("../img/banner-inscripcion.png");
-    background-position: 50% 317%;
+    background-image: url("../img/Banners-principales/banner-pequeños/banner-inscripcion.png");
 }
 
 .formulario-inscripcion{
@@ -978,7 +982,7 @@ PAGE INSCRIPCIONES */
 }
 
 .banner-noticias{
-    background-image: url("../img/banner-noticias.png");
+    background-image: url("../img/Banners-principales/banner-grandes/banner-noticia.jpg");
 }
 
 .content-new{
@@ -1221,7 +1225,7 @@ PAGE INSCRIPCIONES */
   }
 
   .banner-nosotros{
-      background-image: url("../img/banner-nosotros.png");
+    background-image: url("../img/Banners-principales/banner-pequeños/banner-nosotros.png");
   }
 
 
