@@ -10,8 +10,39 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/mediaquerys.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+  <script src="js/jquery.js"></script>
  
 </head>
+<?php
+    if (isset($_POST['submit'])) {
+    
+        $nombre = $_POST["name"];
+        $email = $_POST["email"];
+        $telefono = $_POST["phone"];
+        $mensaje = $_POST["message"];
+
+        $asunto ="Contacto desde la web";
+        $destino = "digital@seppublicidad.com";
+
+
+        $carta =  "De: $nombre \n";
+        $carta .= "Correo: $email\n";
+        $carta .= "Telefono: $telefono\n";
+        $carta .= "Mensaje: $mensaje";
+
+
+        $correo = mail($destino,$asunto,$carta);
+        /*header("Location:index.php");*/
+ 
+    }
+?>
+<script type="text/javascript">
+    $(document).ready(function() {
+        setTimeout(function() {
+            $("#confirmacion").fadeOut(1500);
+        },1000);
+    });
+</script>
 <body>
     <header>
         <div class="container-fluid">
@@ -39,7 +70,7 @@
                                 <a href="galeria.html">Galería</a>
                             </li>
                             <li>
-                                <a href="inscripciones.html">Inscripciones</a>
+                                <a href="inscripciones.php">Inscripciones</a>
                             </li>
                             <li>
                                 <a href="https://www.facebook.com/sracostarica" target="_blank">
@@ -116,21 +147,13 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="well">
-                        <form class="form-horizontal" method="post">
+                        <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'])?>" method="post" class="form-horizontal" id="formulario">
                             <fieldset>
                                 <div class="form-group">
                                     <div class="col-md-1 col-md-offset-2 text-center">
                                         <i class="fas fa-user-tie"></i></div>
                                     <div class="col-md-8">
-                                        <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="col-md-1 col-md-offset-2 text-center">
-                                        <i class="fa fa-user bigicon"></i>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <input id="lname" name="name" type="text" placeholder="Apellidos" class="form-control">
+                                        <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control" required/>
                                     </div>
                                 </div>
         
@@ -139,7 +162,7 @@
                                             <i class="fas fa-envelope"></i>
                                     </div>
                                     <div class="col-md-8">
-                                        <input id="email" name="email" type="text" placeholder="Correo Electrónico" class="form-control">
+                                        <input id="email" name="email" type="text" placeholder="Correo Electrónico" class="form-control" required/>
                                     </div>
                                 </div>
         
@@ -148,7 +171,7 @@
                                         <i class="fa fa-phone-square bigicon"></i>
                                     </div>
                                     <div class="col-md-8">
-                                        <input id="phone" name="phone" type="text" placeholder="Teléfono" class="form-control">
+                                        <input id="phone" name="phone" type="text" placeholder="Teléfono" class="form-control" required/>
                                     </div>
                                 </div>
         
@@ -157,16 +180,25 @@
                                             <i class="fas fa-comment-alt"></i>
                                     </div>
                                     <div class="col-md-8">
-                                        <textarea class="form-control" id="message" name="message" placeholder="Mensaje" rows="7"></textarea>
+                                        <textarea class="form-control" id="message" name="message" placeholder="Mensaje" rows="7" required></textarea>
                                     </div>
                                 </div>
-        
                                 <div class="form-group">
                                     <div class="col-md-12 text-center">
-                                        <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                                        <button type="submit" class="btn btn-primary btn-lg" name="submit">Enviar</button>
                                     </div>
                                 </div>
                             </fieldset>
+                            <div class="text-center">
+                                <?php
+                                    echo '<div id="confirmacion">
+                                    <div class ="wrapper-confirm">
+                                        <p>Tu correo a sido enviado con éxito!!</p>
+                                    </div>
+                                    </div>
+                                    ';
+                                ?>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -199,7 +231,6 @@
             </div>
         </div>
     </footer>
-    <script src="js/jquery.js"></script>
     <script src="js/jquery.aniview.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src ="js/main.js"></script>
