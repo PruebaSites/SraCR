@@ -150,7 +150,7 @@
                         <script type="text/javascript">
                             $(document).ready(function() {
                                 setTimeout(function() {
-                                    $("#confirmacion").fadeOut(1500);
+                                    $("#confirmacion").fadeOut(2000);
                                 },1000);
                             });
                         </script>
