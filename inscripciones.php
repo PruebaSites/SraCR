@@ -13,36 +13,6 @@
   <script src="js/jquery.js"></script>
  
 </head>
-<?php
-    if (isset($_POST['submit'])) {
-    
-        $nombre = $_POST["name"];
-        $email = $_POST["email"];
-        $telefono = $_POST["phone"];
-        $mensaje = $_POST["message"];
-
-        $asunto ="Contacto desde la web";
-        $destino = "digital@seppublicidad.com";
-
-
-        $carta =  "De: $nombre \n";
-        $carta .= "Correo: $email\n";
-        $carta .= "Telefono: $telefono\n";
-        $carta .= "Mensaje: $mensaje";
-
-
-        $correo = mail($destino,$asunto,$carta);
-        /*header("Location:index.php");*/
- 
-    }
-?>
-<script type="text/javascript">
-    $(document).ready(function() {
-        setTimeout(function() {
-            $("#confirmacion").fadeOut(1500);
-        },1000);
-    });
-</script>
 <body>
     <header>
         <div class="container-fluid">
@@ -147,6 +117,43 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="well">
+                        <?php
+                            if (isset($_POST['submit'])) {
+                            
+                                $nombre = $_POST["name"];
+                                $email = $_POST["email"];
+                                $telefono = $_POST["phone"];
+                                $mensaje = $_POST["message"];
+
+                                $asunto ="Contacto desde la web";
+                                $destino = "digital@seppublicidad.com";
+
+
+                                $carta =  "De: $nombre \n";
+                                $carta .= "Correo: $email\n";
+                                $carta .= "Telefono: $telefono\n";
+                                $carta .= "Mensaje: $mensaje";
+
+
+                                $correo = mail($destino,$asunto,$carta);
+                                /*header("Location:index.php");*/
+
+                                echo '<div id="confirmacion text-center">
+                                    <div class ="wrapper-confirm">
+                                        <p>Tu correo a sido enviado con éxito!!</p>
+                                    </div>
+                                    </div>
+                                    ';
+                        
+                            }
+                        ?>
+                        <script type="text/javascript">
+                            $(document).ready(function() {
+                                setTimeout(function() {
+                                    $("#confirmacion").fadeOut(1500);
+                                },1000);
+                            });
+                        </script>
                         <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'])?>" method="post" class="form-horizontal" id="formulario">
                             <fieldset>
                                 <div class="form-group">
@@ -189,16 +196,6 @@
                                     </div>
                                 </div>
                             </fieldset>
-                            <div class="text-center">
-                                <?php
-                                    echo '<div id="confirmacion">
-                                    <div class ="wrapper-confirm">
-                                        <p>Tu correo a sido enviado con éxito!!</p>
-                                    </div>
-                                    </div>
-                                    ';
-                                ?>
-                            </div>
                         </form>
                     </div>
                 </div>
