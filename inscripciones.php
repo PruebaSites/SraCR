@@ -191,7 +191,7 @@
                             </fieldset>
                         </form>
                         <?php
-                             echo '<div id="confirmacion" class="text-center alert alert-primary">
+                             echo '<div id="confirmacion" class="text-center alert alert-info">
                              <div class ="wrapper-confirm">
                                  <p>Tu correo a sido enviado con éxito!!</p>
                              </div>
