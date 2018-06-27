@@ -58,6 +58,218 @@
 }
 
 @media(min-width:768px){
+    header{
+        padding: 2em 0 1em 0;
+    }
+
+    .menu-fixed{
+        position: fixed;
+        width: 100%;
+        z-index: 2;
+    }
+    
+    #menu{
+        background: transparent;
+        border-color: transparent;
+        width: 50%;
+        display: inline-block;
+        left: 25%;
+        margin: 0;
+    }
+    
+    #liste li a,
+    #liste1 li a{
+        color: #ffffff;
+        font-size: 16px;
+    }
+    
+    
+    #list {
+        margin: 2em auto;
+        padding: 0;
+        max-width: 600px;
+        list-style: none;
+        height: 15em;
+    }
+    
+    #liste li,
+    #liste1 li {
+        float: left;
+        margin: 0 5px;
+        text-align: center;
+        line-height: 100px;
+    }
+    
+    @keyframes fadeIn{
+        from {
+            opacity: 0;
+            transform: translate3d(0, -20%, 0);
+        }
+        to {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    
+    
+    #liste1 li{
+        animation: fadeIn 1s ease-in both; 
+    }
+    
+    
+    #liste1 li:nth-child(1) {
+        animation-delay: 0.85s !important;
+    }
+    #liste1 li:nth-child(2) {
+        animation-delay: 1.25s !important;
+    }
+    #liste1 li:nth-child(3) {
+        animation-delay: 1.50s !important;
+    }
+    #liste1 li:nth-child(4) {
+        animation-delay: 2s !important;
+    }
+    #liste1 li:nth-child(5) {
+        animation-delay:2.50s !important;
+    }
+    #liste1 li:nth-child(6) {
+        animation-delay: 3s !important;
+    }
+    #liste1 li:nth-child(7) {
+        animation-delay: 3.50s !important;
+    }
+    
+    #liste1 li:nth-child(8) {
+        animation-delay: 4s !important;
+    }
+    
+    
+    #liste1 li:nth-child(7) a,
+    #liste li:nth-child(7)  a,
+    #liste1 li:nth-child(8) a,
+    #liste li:nth-child(8)  a{
+        padding: 12px 0;
+    }
+    
+    #liste li:nth-child(1){
+        animation: fadeOut 1.60s linear forwards;
+    }
+    #liste li:nth-child(2){
+       animation: fadeOut 1.40s linear forwards;
+    }
+    #liste li:nth-child(3){
+       animation: fadeOut 1.20s linear forwards;
+    }
+    #liste li:nth-child(4){
+        animation: fadeOut 1s linear forwards;
+    }
+    
+    #liste li:nth-child(5){
+        animation: fadeOut .80s linear forwards;
+    }
+    #liste li:nth-child(6){
+        animation: fadeOut .60s linear forwards;
+    }
+    #liste li:nth-child(7){
+       animation: fadeOut .40s linear forwards;
+    }
+    #liste li:nth-child(8){
+        animation: fadeOut .20s linear forwards;
+    }
+    
+    
+    @keyframes fadeOut {
+        0% { opacity: 1; }
+        100% { opacity: 0; }
+    }
+    #menu-responsive{
+        position: fixed;
+        top: -20%;
+        transition: all 10s ease;
+        background: transparent;
+     /*    height: 100%;
+        width: 100%;
+        right: 0; */
+    }
+    
+    .menu-open{
+        transition: all 0.75s ease !important;
+        top: 5% !important;
+        margin: 0;
+      }
+    
+      .btn-menu-responsive{
+        width: 35px;
+        height: 30px;
+        cursor: pointer;
+        overflow: hidden;
+        float: right;
+        margin-top: 8%;
+      }
+    
+      .in-btn-menu-responsive{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        z-index: 999;
+      }
+    
+      span{
+        height: 5px;
+        width: 100%;
+        position: absolute;
+        background-color: #ffffff;
+        display: block;
+        -webkit-transform-origin: 50% 50%;
+        -moz-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        transform: rotate(0deg);
+        margin: 0px;
+        
+      }
+    
+      span:nth-child(1){ 
+        top:0; 
+        transition:transform 500ms ease 0ms, top 200ms ease 500ms;    
+      }
+    
+      span:nth-child(2){ 
+        top: 50%; 
+        margin-top: -2.5px;
+        left: 0%;
+        transition: left 200ms ease 700ms,
+      }
+    
+      
+      span:nth-child(3){ 
+        bottom: 0%; 
+        transition:transform 500ms ease 0ms, bottom 200ms ease 500ms;
+     } 
+    
+     .menu-open span:nth-child(1){  
+        transition: top 200ms ease 200ms, transform 500ms ease 400ms;
+        top: 50%; 
+        margin-top: -2.5px; 
+        transform: rotate(45deg);
+      }
+    
+      .menu-open   span:nth-child(2){ 
+        transition: left 200ms ease 0ms;
+        left: -100%; 
+      }
+    
+      .menu-open span:nth-child(3){  
+        transition: bottom 200ms ease 200ms, transform 500ms ease 400ms;
+        bottom: 50%; 
+        margin-bottom: -2.5px; 
+        transform: rotate(-45deg);
+      }
+
+
+
+
+
+
     #thumbnail-slider ul li{
         width: 470px !important;
         height: 330px !important;
@@ -86,6 +298,58 @@
         background-color: #333;
         color: #fff;
         outline: 0cm;
+    }
+}
+
+
+@media(max-width:768px){
+    .navbar-brand h1{
+        font-size: 28px;
+    }
+    
+    .navbar-brand h3{
+        font-size: 17px;
+    }
+    
+    .navbar-default{
+        border-color: transparent;
+        min-height: 90px;
+        height: auto;
+        background-color: #000000;
+        margin-bottom: 0;
+    }
+    
+    .navbar-default .navbar-toggle{
+        border-color: transparent;
+        margin-top: 20px;
+    }
+    
+    
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form{
+        border-color: transparent;
+    }
+    
+    .navbar-nav {
+        margin: 30.5px -15px;
+    }
+    
+    .navbar-default .navbar-toggle .icon-bar{
+        background-color: white;
+    }
+    
+    .navbar-toggle .icon-bar{
+        width: 30px;
+        height: 4px;
+    }
+    
+    .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+        background-color: transparent;
+    }
+    .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, 
+    .navbar-default .navbar-nav>.active>a:focus,
+    .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
+        color: white;
+        background-color: #8c88886b;
     }
 }
 
