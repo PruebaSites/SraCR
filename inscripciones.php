@@ -169,7 +169,7 @@
                                 $mensaje = $_POST["message"];
 
                                 $asunto ="Contacto desde la web";
-                                $destino = "digital@seppublicidad.com";
+                                $destino = "info@sracostarica.com";
 
 
                                 $carta =  "De: $nombre \n";
