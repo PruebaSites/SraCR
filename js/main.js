@@ -77,3 +77,10 @@ $(window).ready(function(){
     
     $(".twist").css("width", "25%").css("width", "+=3px");
 });
+
+$( document ).ready(function() {
+    $(".slider-galeria").click(function(){
+        var item = $(this).attr("id");
+        console.log(item);
+    })
+});

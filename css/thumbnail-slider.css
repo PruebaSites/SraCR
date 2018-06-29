@@ -58,7 +58,7 @@
     opacity:1;
 }
 
-    #thumbnail-slider ul li:after {
+    /* #thumbnail-slider ul li:after {
         content:"ENLARGE";
         display:block;
         position:absolute;
@@ -77,7 +77,7 @@
     #thumbnail-slider ul li.active:after {
         font-size:10px;
         background-color:#C00;
-    }
+    } */
 
 #thumbnail-slider li:hover {
     opacity:0.8;

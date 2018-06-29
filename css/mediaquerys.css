@@ -374,7 +374,7 @@
     background-attachment: scroll;
     }
     .logotipo{
-        left: 34%;
+        left: 37%;
     }
 }
 
@@ -389,3 +389,8 @@
 }
 
 
+@media(max-width: 768px){
+    .mar-bottom-xs{
+        margin-bottom: 2em;
+    }
+}

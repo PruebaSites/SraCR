@@ -92,7 +92,7 @@
                     </div>
                     <div id="navbar2" class="navbar-collapse collapse">
                       <ul class="nav navbar-nav navbar-right">
-                        <li class="active">
+                        <li>
                             <a href="index.html">Inicio</a>
                         </li>
                         <li>
@@ -136,9 +136,7 @@
             </div>
         </div>
     </section>
-    <div class="section-wrapper-images">
-        <h2 class="text-center txt-pink title-great font-60 aniview"  data-av-animation="flipInY">Galería de imágenes</h2>
-        <!-- Modal -->
+    <!-- Modal -->
         <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -185,65 +183,7 @@
                         </ul>
                     </div>
                 </div>
-                <div id="thumbs2" style="display:none;">
-                    <div class="inner">
-                        <ul>
-                            <li>
-                                <a class="thumb" href="img/fiesta-fun2010/foto-1.png"></a>
-                            </li>
-                            <li>
-                                <a class="thumb" href="img/fiesta-fun2010/foto2.png"></a>
-                            </li>
-                            <li>
-                                <a class="thumb" href="img/fiesta-fun2010/foto-1.png"></a>
-                            </li>
-                            <li>
-                                <a class="thumb" href="img/fiesta-fun2010/foto2.png"></a>
-                            </li>
-                            <li>
-                                <a class="thumb" href="img/fiesta-fun2010/foto-1.png"></a>
-                            </li>
-                            <li>
-                                <a class="thumb" href="img/fiesta-fun2010/foto2.png"></a>
-                            </li>
-                            <li>
-                                <a class="thumb" href="img/fiesta-fun2010/foto-1.png"></a>
-                            </li>
-                            <li>
-                                <a class="thumb" href="img/fiesta-fun2010/foto2.png"></a>
-                            </li>
-                            <li>
-                                <a class="thumb" href="img/fiesta-fun2010/foto-1.png"></a>
-                            </li>
-                            <li>
-                                <a class="thumb" href="img/fiesta-fun2010/foto2.png"></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div id="closeBtn">CLOSE</div>
-                </div>
-                <script>
-                    var thumbs1 = document.getElementById("thumbnail-slider");
-                    var thumbs2 = document.getElementById("thumbs2");
-                    var closeBtn = document.getElementById("closeBtn");
-                    var slides = thumbs1.getElementsByTagName("li");
-                    for (var i = 0; i < slides.length; i++) {
-                        slides[i].index = i;
-                        slides[i].onclick = function (e) {
-                            var li = this;
-                            var clickedEnlargeBtn = false;
-                            if (e.offsetX > 220 && e.offsetY < 25) clickedEnlargeBtn = true;
-                            if (li.className.indexOf("active") != -1 || clickedEnlargeBtn) {
-                                thumbs2.style.display = "block";
-                                mcThumbs2.init(li.index);
-                            }
-                        };
-                    }
-        
-                    thumbs2.onclick = closeBtn.onclick = function (e) {
-                        thumbs2.style.display = "none";
-                    };
-                </script>
+
              </div>
             </div>
             <div class="modal-footer">
@@ -253,86 +193,150 @@
             </div>
         </div> -->
         <!-- Modal -->
-
+    <div class="section-wrapper-images">
+        <h2 class="text-center txt-pink title-great font-60 aniview"  data-av-animation="flipInY">Galería de imágenes</h2>
         <div class="container-fluid not-padding-col">
             <div class="clearfix">
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 not-padding-col">
                     <div class="hovereffect-galeria aniview"  data-av-animation="flipInX">
-                        <img class="img-responsive" src="img/Galeria/fiesta-funda-2010.png" alt="">
+                        <img class="img-responsive" src="img/Galeria/sra-2008/principal-2008.jpg" alt="">
                         <div class="overlay">
-                            <h2>Fiesta fundación 2010</h2>
-                            <!-- <a class="info" href="#" data-toggle="modal" data-target="#exampleModal">Ver más imagenes</a> -->
+                            <h2>Gala Final Señora Costa Rica 2008</h2>
+                            <!-- <a class="info slider-galeria" id="gala-2010" href="#" data-toggle="modal" data-target="#exampleModal">Ver más imagenes</a> -->
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 not-padding-col">
                     <div class="hovereffect-galeria aniview"  data-av-animation="flipInX">
-                        <img class="img-responsive" src="img/Galeria/Fiesta-cierre-2010.png" alt="">
+                        <img class="img-responsive" src="img/Galeria/sra-2009/principal-2009.jpg" alt="">
                         <div class="overlay">
-                            <h2>Noche final Señora Costa Rica 2010</h2>
+                            <h2>Gala final Señora Costa Rica 2009</h2>
                             <!-- <a class="info" href="#">Ver más imágenes</a> -->
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 not-padding-col">
                     <div class="hovereffect-galeria aniview"  data-av-animation="flipInX">
-                        <img class="img-responsive" src="img/Galeria/fiesta-funda-2012.png" alt="">
+                        <img class="img-responsive" src="img/Galeria/sra-2010/fundacion/principal-2010.jpg" alt="">
                         <div class="overlay">
-                            <h2>Candidatas  en la fundación 2012</h2>
+                            <h2> Evento fundación 2010</h2>
                             <!-- <a class="info" href="#">Ver más imágenes</a> -->
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 not-padding-col">
                     <div class="hovereffect-galeria aniview"  data-av-animation="flipInX">
-                        <img class="img-responsive" src="img/Galeria/candidatas-2012.png" alt="">
+                        <img class="img-responsive" src="img/Galeria/sra-2010/noche-final/principal-2010.jpg" alt="">
+                        <div class="overlay">
+                            <h2>Gala final Señora Costa Rica 2010</h2>
+                            <!-- <a class="info" href="#">Ver más imágenes</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 not-padding-col">
+                    <div class="hovereffect-galeria aniview"  data-av-animation="flipInX">
+                        <img class="img-responsive" src="img/Galeria/sra-2012/candidatas/principal-2012.jpg" alt="">
                         <div class="overlay">
                             <h2>Candidatas Señora Costa Rica 2012</h2>
-                            <!-- <a class="info" href="#">Ver más imágenes</a> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 not-padding-col">
-                    <div class="hovereffect-galeria aniview"  data-av-animation="flipInX">
-                        <img class="img-responsive" src="img/Galeria/Fiesta-cierre-2012.png" alt="">
-                        <div class="overlay">
-                            <h2>Noche final Señora Costa Rica 2012</h2>
                            <!--  <a class="info" href="#">Ver más imágenes</a> -->
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 not-padding-col">
                     <div class="hovereffect-galeria aniview"  data-av-animation="flipInX">
-                        <img class="img-responsive" src="img/Galeria/fiesta-funda-2015.png" alt="">
+                        <img class="img-responsive" src="img/Galeria/sra-2012/fundacion/principal-2012.jpg" alt="">
                         <div class="overlay">
-                            <h2>Candidatas en la fundación 2015</h2>
+                            <h2>Evento fundacion 2012</h2>
                             <!-- <a class="info" href="#">Ver más imágenes</a> -->
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 not-padding-col">
                     <div class="hovereffect-galeria aniview"  data-av-animation="flipInX">
-                        <img class="img-responsive" src="img/Galeria/candidatas-2015.png" alt="">
+                        <img class="img-responsive" src="img/Galeria/sra-2012/noche-final/principal-2012.jpg" alt="">
                         <div class="overlay">
-                            <h2>Candidatas señora Costa Rica 2015</h2>
+                            <h2>Gala final Señora Costa Rica 2012</h2>
                             <!-- <a class="info" href="#">Ver más imágenes</a> -->
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 not-padding-col">
                     <div class="hovereffect-galeria aniview"  data-av-animation="flipInX">
-                        <img class="img-responsive" src="img/Galeria/Fiesta-cierre-2015.png" alt="">
+                        <img class="img-responsive" src="img/Galeria/sra-2015/candidatas/principal-2015.jpg" alt="">
                         <div class="overlay">
-                            <h2>Noche final Señora Costa Rica 2015</h2>
+                            <h2>Candidatas Señora Costa Rica 2015</h2>
                            <!--  <a class="info" href="#">Ver más imágenes</a> -->
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 not-padding-col">
                     <div class="hovereffect-galeria aniview"  data-av-animation="flipInX">
-                        <img class="img-responsive" src="img/Galeria/fiesta-funda-2016.png" alt="">
+                        <img class="img-responsive" src="img/Galeria/sra-2015/fundacion/principal-2015.jpg" alt="">
                         <div class="overlay">
-                            <h2>Candidatas en la fundación 2016</h2>
+                            <h2>Evento fundación 2015</h2>
+                            <!-- <a class="info" href="#">Ver más imágenes</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 not-padding-col">
+                    <div class="hovereffect-galeria aniview"  data-av-animation="flipInX">
+                        <img class="img-responsive" src="img/Galeria/sra-2015/noche-final/principal-2015.jpg" alt="">
+                        <div class="overlay">
+                            <h2>Gala final Señora Costa Rica 2015</h2>
+                            <!-- <a class="info" href="#">Ver más imágenes</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 not-padding-col">
+                    <div class="hovereffect-galeria aniview"  data-av-animation="flipInX">
+                        <img class="img-responsive" src="img/Galeria/sra-2016/candidatas/principal-2016.jpg" alt="">
+                        <div class="overlay">
+                            <h2>Candidatas Señora Costa Rica 2016</h2>
+                            <!-- <a class="info" href="#">Ver más imágenes</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 not-padding-col">
+                    <div class="hovereffect-galeria aniview"  data-av-animation="flipInX">
+                        <img class="img-responsive" src="img/Galeria/sra-2016/fundacion/principal-2016.jpg" alt="">
+                        <div class="overlay">
+                            <h2>Evento fundación 2016</h2>
+                            <!-- <a class="info" href="#">Ver más imágenes</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 not-padding-col">
+                    <div class="hovereffect-galeria aniview"  data-av-animation="flipInX">
+                        <img class="img-responsive" src="img/Galeria/sra-2016/noche-final/principal-2016.jpg" alt="">
+                        <div class="overlay">
+                            <h2>Gala final Señora Costa Rica 2016</h2>
+                            <!-- <a class="info" href="#">Ver más imágenes</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 not-padding-col">
+                    <div class="hovereffect-galeria aniview"  data-av-animation="flipInX">
+                        <img class="img-responsive" src="img/Galeria/sra-2017/candidatas/principal-2017.jpg" alt="">
+                        <div class="overlay">
+                            <h2>Candidatas Señora Costa Rica 2017</h2>
+                            <!-- <a class="info" href="#">Ver más imágenes</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 not-padding-col">
+                    <div class="hovereffect-galeria aniview"  data-av-animation="flipInX">
+                        <img class="img-responsive" src="img/Galeria/sra-2017/fundacion/principal-2017.jpg" alt="">
+                        <div class="overlay">
+                            <h2>Evento fundación 2017</h2>
+                            <!-- <a class="info" href="#">Ver más imágenes</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 not-padding-col">
+                    <div class="hovereffect-galeria aniview"  data-av-animation="flipInX">
+                        <img class="img-responsive" src="img/Galeria/sra-2017/noche-final/principal-2017.jpg" alt="">
+                        <div class="overlay">
+                            <h2>Gala final Señora Costa Rica 2017</h2>
                             <!-- <a class="info" href="#">Ver más imágenes</a> -->
                         </div>
                     </div>

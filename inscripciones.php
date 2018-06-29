@@ -92,7 +92,7 @@
                     </div>
                     <div id="navbar2" class="navbar-collapse collapse">
                       <ul class="nav navbar-nav navbar-right">
-                        <li class="active">
+                        <li>
                             <a href="index.html">Inicio</a>
                         </li>
                         <li>
@@ -146,23 +146,22 @@
                         <p class="text-center ">
                             Invitamos a todas las señoras costarricenses a participar y colaborar por amor 
                             a una causa. Inscríbase y descargue los archivos adjuntos. 
-
                         </p>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center mar-bottom-xs">
                     <h4 class="title-news">Formulario de Inscripción  2018</h4>
                     <button class="btn draw-border">
                         <a href="pdf/Formulario inscripción Sra Costa Rica 2018.pdf" download="Formulario inscripción Sra Costa Rica 2018"><i class="fas fa-download"></i>Descargar</a>
                     </button>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center mar-bottom-xs">
                     <h4 class="title-news">Requisitos 2018 </h4>
                     <button class="btn draw-border">
                         <a href="pdf/Requisitos 2018-ajuste Sra Costa Rica.pdf" download="Requisitos"><i class="fas fa-download"></i>Descargar</a>
                     </button>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center mar-bottom-xs">
                     <h4 class="title-news">Reglamento del Concurso Señora Costa Rica</h4>
                     <button class="btn draw-border">
                         <a href="pdf/Reglamento Sra Costa Rica 2018.pdf" download="Reglamento Sra Costa Rica 2018 "><i class="fas fa-download"></i>Descargar</a>
