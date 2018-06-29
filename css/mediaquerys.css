@@ -376,6 +376,9 @@
     .logotipo{
         left: 37%;
     }
+    p{
+        font-size: 12px;
+    }
 }
 
 @media(min-width:569px) and (max-width:767px){
