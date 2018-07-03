@@ -40,7 +40,7 @@
                                     <a href="noticias.html">Noticias</a>
                                 </li>
                                 <li>
-                                    <a href="galeria.html">Galería</a>
+                                    <a href="galeria.php">Galería</a>
                                 </li>
                                 <li>
                                     <a href="inscripciones.php">Inscripciones</a>
@@ -105,7 +105,7 @@
                             <a href="noticias.html">Noticias</a>
                         </li>
                         <li>
-                            <a href="galeria.html">Galería</a>
+                            <a href="galeria.php">Galería</a>
                         </li>
                         <li>
                             <a href="inscripciones.php">Inscripciones</a>
