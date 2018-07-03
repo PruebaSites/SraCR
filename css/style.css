@@ -1095,9 +1095,15 @@ PAGE INSCRIPCIONES */
 	display: inline-block;
 }
 
-.carousel-header .header-paging {
+/* .carousel-header .header-paging {
 	float: right;
+} */
+
+.carousel-header .header-paging a{
+    color: white;
+    font-size: 20px;
 }
+
 
 .carousel-body {
 	overflow: hidden;

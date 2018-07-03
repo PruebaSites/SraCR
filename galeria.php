@@ -147,12 +147,6 @@
                     </div> -->
                     <div class="modal-body">
                          <div class="carousel-recs carousel-container">
-                            <div class="carousel-header">
-                                <div class="header-paging">
-                                    <a href="#" class="carousel-prev-rec">< </a>|
-                                    <a href="#" class="carousel-next-rec"> ></a>
-                                </div>
-                            </div>
                             <!-- BODY -->
                             <div class="carousel-body Gala2008 hidden">
                                 <ul class="carousel-list">
@@ -458,6 +452,12 @@
                                     ?>
                                 </ul>
                             </div>
+                            <div class="carousel-header text-center">
+                            <div class="header-paging">
+                                <a href="#" class="carousel-prev-rec">< </a>|
+                                <a href="#" class="carousel-next-rec"> ></a>
+                            </div>
+                        </div>
                         </div>
                     </div>
                     <div class="modal-footer">
