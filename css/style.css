@@ -1074,3 +1074,104 @@ PAGE INSCRIPCIONES */
     -vendor-animation-duration: 6s;
     -vendor-animation-delay: 3s;
 }
+
+
+/* .carousel-container {
+	margin-bottom: 60px;
+} */
+
+.carousel-header:before,
+.carousel-header:after {
+	display: table;
+	clear: both;
+	content: '';
+}
+
+.carousel-header .header-text {
+	float: left;
+}
+
+.carousel-header .header-words {
+	display: inline-block;
+}
+
+.carousel-header .header-paging {
+	float: right;
+}
+
+.carousel-body {
+	overflow: hidden;
+}
+
+.carousel-body:before,
+.carousel-body:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.carousel-body .carousel-list {
+	list-style: none;
+	padding-left: 0;
+	width: 3045px;
+	height: 200px;
+	transition: transform 1s;
+}
+
+.carousel-body .carousel-listitem {
+	float: left;
+	margin-right: 7px;
+	border: 1px solid #dadcdf;
+	height: auto;
+	width: 500px;
+}
+
+.carousel-body .carousel-listitem:nth-child(2n) {
+	background-color: #ececec;
+}
+
+.carousel-body .carousel-listitem:nth-child(2n+1) {
+	background-color: #dadada;
+}
+
+.carousel-body .carousel-itemlink {
+	text-decoration: none;
+}
+
+.carousel-body .carousel-listitem .carousel-hover-container {
+	opacity: 0;
+	transition: opacity .5s;
+	height: 100%;
+	width: 100%;
+}
+
+.carousel-body .carousel-listitem:hover .carousel-hover-container {
+	display: block;
+	background-color: rgba(255, 255, 255, .9);
+	opacity: .9;
+}
+
+
+.Gala2009  .carousel-list{
+    width: auto;
+}
+
+.candidatas2015 .carousel-listitem,
+.Gala2009  .carousel-listitem,
+.candidatas2017 .carousel-listitem{
+    margin-left: 60px;
+}
+
+.reset-style{
+   transform: translateX(0) !important;
+}
+
+.carousel-list{
+    transform: translateX(0);
+}
+
+.candidatas2017 .carousel-listitem,
+.Gala2017 .carousel-listitem{
+    width: 410px;
+    margin-left: 0;
+}
