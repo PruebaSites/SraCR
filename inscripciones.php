@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/mediaquerys.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
   <script src="js/jquery.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
  
 </head>
 <body>

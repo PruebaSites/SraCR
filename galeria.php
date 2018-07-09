@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/thumbnail-slider.css">
   <link rel="stylesheet" href="css/thumbs2.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
 </head>
 <body>
     <div class="menu-fixed">
