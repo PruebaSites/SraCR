@@ -396,4 +396,28 @@
     .mar-bottom-xs{
         margin-bottom: 2em;
     }
+
+    .banner-wrapper{
+        background-image: url("../img/Banners-principales/banner-mobile/banner-principal.jpg");
+    }
+
+    .banner-nosotros{
+        background-image: url("../img/Banners-principales/banner-mobile/banner-nosotros.jpg");
+    }
+    .banner-historia{
+        background-image: url("../img/Banners-principales/banner-mobile/banner-historia.jpg");
+    }
+
+    .banner-noticias{
+        background-image: url("../img/Banners-principales/banner-mobile/banner-noticia.jpg");
+    }
+
+    .banner-galeria{
+        background-image: url("../img/Banners-principales/banner-mobile/banner-galeria.jpg");
+    }
+    .banner-inscripcion{
+        background-image: url("../img/Banners-principales/banner-mobile/banner-inscripcion.jpg");
+        background-position: 50% -50px;
+    }
+
 }
