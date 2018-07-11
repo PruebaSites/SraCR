@@ -9,8 +9,9 @@
   <link rel="stylesheet" href="css/imagehover.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/mediaquerys.css">
-  <link rel="stylesheet" href="css/thumbnail-slider.css">
-  <link rel="stylesheet" href="css/thumbs2.css">
+<!--   <link rel="stylesheet" href="css/thumbnail-slider.css">
+  <link rel="stylesheet" href="css/thumbs2.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.0/flexslider.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
   <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
 </head>
@@ -137,337 +138,44 @@
             </div>
         </div>
     </section>
-    <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <!-- <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div> -->
-                    <div class="modal-body">
-                         <div class="carousel-recs carousel-container">
-                            <!-- BODY -->
-                            <div class="carousel-body Gala2008 hidden">
-                                <ul class="carousel-list">
-                                    <?php
-                                        $puntero = opendir("img/Galeria/sra-2008");
-                                        $img = 0;
-                                        while(false!==($imagenes=readdir($puntero))){
-                                            if($imagenes!= "." && $imagenes != ".."){
-                                            if($img < 6){
-                                                echo "<li class='carousel-listitem'>";
-                                                echo "<img class='carousel-itemlink' src = 'img/Galeria/sra-2008/$imagenes' width = '100%'></img>";
-                                                echo "</li>";
-                                            }
-                                            $img++;
-                                            }
-                                        }
-                                        closedir($puntero);
-                                    ?>
-                                </ul>
-                            </div>
-                            <div class="carousel-body Gala2009 hidden">
-                                <ul class="carousel-list">
-                                    <?php
-                                        $puntero = opendir("img/Galeria/sra-2009");
-                                        $img = 0;
-                                        while(false!==($imagenes=readdir($puntero))){
-                                            if($imagenes!= "." && $imagenes != ".."){
-                                            if($img < 2){
-                                                echo "<li class='carousel-listitem'>";
-                                                echo "<img class='carousel-itemlink' src = 'img/Galeria/sra-2009/$imagenes' width = '100%'></img>";
-                                                echo "</li>";
-                                            }
-                                            $img++;
-                                            }
-                                        }
-                                        closedir($puntero);
-                                    ?>
-                                </ul>
-                            </div>
-                            <div class="carousel-body fundacion2010 hidden">
-                                <ul class="carousel-list">
-                                    <?php
-                                        $puntero = opendir("img/Galeria/sra-2010/fundacion");
-                                        $img = 0;
-                                        while(false!==($imagenes=readdir($puntero))){
-                                            if($imagenes!= "." && $imagenes != ".."){
-                                            if($img < 6){
-                                                echo "<li class='carousel-listitem'>";
-                                                echo "<img class='carousel-itemlink' src = 'img/Galeria/sra-2010/fundacion/$imagenes' width = '100%'></img>";
-                                                echo "</li>";
-                                            }
-                                            $img++;
-                                            }
-                                        }
-                                        closedir($puntero);
-                                    ?>
-                                </ul>
-                            </div>
-                            <div class="carousel-body Gala2010 hidden">
-                                <ul class="carousel-list">
-                                    <?php
-                                        $puntero = opendir("img/Galeria/sra-2010/noche-final");
-                                        $img = 0;
-                                        while(false!==($imagenes=readdir($puntero))){
-                                            if($imagenes!= "." && $imagenes != ".."){
-                                            if($img < 6){
-                                                echo "<li class='carousel-listitem'>";
-                                                echo "<img class='carousel-itemlink' src = 'img/Galeria/sra-2010/noche-final/$imagenes' width = '100%'></img>";
-                                                echo "</li>";
-                                            }
-                                            $img++;
-                                            }
-                                        }
-                                        closedir($puntero);
-                                    ?>
-                                </ul>
-                            </div>
-                            <div class="carousel-body candidatas2012 hidden">
-                                <ul class="carousel-list">
-                                    <?php
-                                        $puntero = opendir("img/Galeria/sra-2012/candidatas");
-                                        $img = 0;
-                                        while(false!==($imagenes=readdir($puntero))){
-                                            if($imagenes!= "." && $imagenes != ".."){
-                                            if($img < 6){
-                                                echo "<li class='carousel-listitem'>";
-                                                echo "<img class='carousel-itemlink' src = 'img/Galeria/sra-2012/candidatas/$imagenes' width = '100%'></img>";
-                                                echo "</li>";
-                                            }
-                                            $img++;
-                                            }
-                                        }
-                                        closedir($puntero);
-                                    ?>
-                                </ul>
-                            </div>
-                            <div class="carousel-body fundacion2012 hidden">
-                                <ul class="carousel-list">
-                                    <?php
-                                        $puntero = opendir("img/Galeria/sra-2012/fundacion");
-                                        $img = 0;
-                                        while(false!==($imagenes=readdir($puntero))){
-                                            if($imagenes!= "." && $imagenes != ".."){
-                                            if($img < 6){
-                                                echo "<li class='carousel-listitem'>";
-                                                echo "<img class='carousel-itemlink' src = 'img/Galeria/sra-2012/fundacion/$imagenes' width = '100%'></img>";
-                                                echo "</li>";
-                                            }
-                                            $img++;
-                                            }
-                                        }
-                                        closedir($puntero);
-                                    ?>
-                                </ul>
-                            </div>
-                            <div class="carousel-body Gala2012 hidden">
-                                <ul class="carousel-list">
-                                    <?php
-                                        $puntero = opendir("img/Galeria/sra-2012/noche-final");
-                                        $img = 0;
-                                        while(false!==($imagenes=readdir($puntero))){
-                                            if($imagenes!= "." && $imagenes != ".."){
-                                            if($img < 6){
-                                                echo "<li class='carousel-listitem'>";
-                                                echo "<img class='carousel-itemlink' src = 'img/Galeria/sra-2012/noche-final/$imagenes' width = '100%'></img>";
-                                                echo "</li>";
-                                            }
-                                            $img++;
-                                            }
-                                        }
-                                        closedir($puntero);
-                                    ?>
-                                </ul>
-                            </div>
-                            <div class="carousel-body candidatas2015 hidden">
-                                <ul class="carousel-list">
-                                    <?php
-                                        $puntero = opendir("img/Galeria/sra-2015/candidatas");
-                                        $img = 0;
-                                        while(false!==($imagenes=readdir($puntero))){
-                                            if($imagenes!= "." && $imagenes != ".."){
-                                            if($img < 5){
-                                                echo "<li class='carousel-listitem'>";
-                                                echo "<img class='carousel-itemlink' src = 'img/Galeria/sra-2015/candidatas/$imagenes' width = '100%'></img>";
-                                                echo "</li>";
-                                            }
-                                            $img++;
-                                            }
-                                        }
-                                        closedir($puntero);
-                                    ?>
-                                </ul>
-                            </div>
-                            <div class="carousel-body fundacion2015 hidden">
-                                <ul class="carousel-list">
-                                    <?php
-                                        $puntero = opendir("img/Galeria/sra-2015/fundacion");
-                                        $img = 0;
-                                        while(false!==($imagenes=readdir($puntero))){
-                                            if($imagenes!= "." && $imagenes != ".."){
-                                            if($img < 6){
-                                                echo "<li class='carousel-listitem'>";
-                                                echo "<img class='carousel-itemlink' src = 'img/Galeria/sra-2015/fundacion/$imagenes' width = '100%'></img>";
-                                                echo "</li>";
-                                            }
-                                            $img++;
-                                            }
-                                        }
-                                        closedir($puntero);
-                                    ?>
-                                </ul>
-                            </div>
-                            <div class="carousel-body Gala2015 hidden">
-                                <ul class="carousel-list">
-                                    <?php
-                                        $puntero = opendir("img/Galeria/sra-2015/noche-final");
-                                        $img = 0;
-                                        while(false!==($imagenes=readdir($puntero))){
-                                            if($imagenes!= "." && $imagenes != ".."){
-                                            if($img < 6){
-                                                echo "<li class='carousel-listitem'>";
-                                                echo "<img class='carousel-itemlink' src = 'img/Galeria/sra-2015/noche-final/$imagenes' width = '100%'></img>";
-                                                echo "</li>";
-                                            }
-                                            $img++;
-                                            }
-                                        }
-                                        closedir($puntero);
-                                    ?>
-                                </ul>
-                            </div>
-                            <div class="carousel-body candidatas2016 hidden">
-                                <ul class="carousel-list">
-                                    <?php
-                                        $puntero = opendir("img/Galeria/sra-2016/candidatas");
-                                        $img = 0;
-                                        while(false!==($imagenes=readdir($puntero))){
-                                            if($imagenes!= "." && $imagenes != ".."){
-                                            if($img < 6){
-                                                echo "<li class='carousel-listitem'>";
-                                                echo "<img class='carousel-itemlink' src = 'img/Galeria/sra-2016/candidatas/$imagenes' width = '100%'></img>";
-                                                echo "</li>";
-                                            }
-                                            $img++;
-                                            }
-                                        }
-                                        closedir($puntero);
-                                    ?>
-                                </ul>
-                            </div>
-                            <div class="carousel-body fundacion2016 hidden">
-                                <ul class="carousel-list">
-                                    <?php
-                                        $puntero = opendir("img/Galeria/sra-2016/fundacion");
-                                        $img = 0;
-                                        while(false!==($imagenes=readdir($puntero))){
-                                            if($imagenes!= "." && $imagenes != ".."){
-                                            if($img < 6){
-                                                echo "<li class='carousel-listitem'>";
-                                                echo "<img class='carousel-itemlink' src = 'img/Galeria/sra-2016/fundacion/$imagenes' width = '100%'></img>";
-                                                echo "</li>";
-                                            }
-                                            $img++;
-                                            }
-                                        }
-                                        closedir($puntero);
-                                    ?>
-                                </ul>
-                            </div>
-                            <div class="carousel-body Gala2016 hidden">
-                                <ul class="carousel-list">
-                                    <?php
-                                        $puntero = opendir("img/Galeria/sra-2016/noche-final");
-                                        $img = 0;
-                                        while(false!==($imagenes=readdir($puntero))){
-                                            if($imagenes!= "." && $imagenes != ".."){
-                                            if($img < 6){
-                                                echo "<li class='carousel-listitem'>";
-                                                echo "<img class='carousel-itemlink' src = 'img/Galeria/sra-2016/noche-final/$imagenes' width = '100%'></img>";
-                                                echo "</li>";
-                                            }
-                                            $img++;
-                                            }
-                                        }
-                                        closedir($puntero);
-                                    ?>
-                                </ul>
-                            </div>
-                            <div class="carousel-body candidatas2017 hidden">
-                                <ul class="carousel-list">
-                                    <?php
-                                        $puntero = opendir("img/Galeria/sra-2017/candidatas");
-                                        $img = 0;
-                                        while(false!==($imagenes=readdir($puntero))){
-                                            if($imagenes!= "." && $imagenes != ".."){
-                                            if($img < 3){
-                                                echo "<li class='carousel-listitem'>";
-                                                echo "<img class='carousel-itemlink' src = 'img/Galeria/sra-2017/candidatas/$imagenes' width = '100%'></img>";
-                                                echo "</li>";
-                                            }
-                                            $img++;
-                                            }
-                                        }
-                                        closedir($puntero);
-                                    ?>
-                                </ul>
-                            </div>
-                            <div class="carousel-body fundacion2017 hidden">
-                                <ul class="carousel-list">
-                                    <?php
-                                        $puntero = opendir("img/Galeria/sra-2017/fundacion");
-                                        $img = 0;
-                                        while(false!==($imagenes=readdir($puntero))){
-                                            if($imagenes!= "." && $imagenes != ".."){
-                                            if($img < 6){
-                                                echo "<li class='carousel-listitem'>";
-                                                echo "<img class='carousel-itemlink' src = 'img/Galeria/sra-2017/fundacion/$imagenes' width = '100%'></img>";
-                                                echo "</li>";
-                                            }
-                                            $img++;
-                                            }
-                                        }
-                                        closedir($puntero);
-                                    ?>
-                                </ul>
-                            </div>
-                            <div class="carousel-body Gala2017 hidden">
-                                <ul class="carousel-list">
-                                    <?php
-                                        $puntero = opendir("img/Galeria/sra-2017/noche-final");
-                                        $img = 0;
-                                        while(false!==($imagenes=readdir($puntero))){
-                                            if($imagenes!= "." && $imagenes != ".."){
-                                            if($img < 3){
-                                                echo "<li class='carousel-listitem'>";
-                                                echo "<img class='carousel-itemlink' src = 'img/Galeria/sra-2017/noche-final/$imagenes' width = '100%'></img>";
-                                                echo "</li>";
-                                            }
-                                            $img++;
-                                            }
-                                        }
-                                        closedir($puntero);
-                                    ?>
-                                </ul>
-                            </div>
-                            <div class="carousel-header text-center">
-                            <div class="header-paging">
-                                <a href="#" class="carousel-prev-rec">< </a>|
-                                <a href="#" class="carousel-next-rec"> ></a>
-                            </div>
-                        </div>
+    <!-- MODAL INICIO -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <!-- <div class="modal-header">
+                </div> -->
+                <div class="modal-body">
+                    <div class="slider">
+                        <div class="slider-control slide-left"><i class="fa fa-minus fa-2x"></i></div>
+                        <div class="slider-control slide-right"><i class="fa fa-plus fa-2x"></i></div>
+                    
+                        <div class="slide-box Gala2008 hidden">
+                            <?php
+                                $puntero = opendir("img/Galeria/sra-2008");
+                                $img = 0;
+                                while(false!==($imagenes=readdir($puntero))){
+                                    if($imagenes!= "." && $imagenes != ".."){
+                                    if($img < 6){
+                                        echo "<div class='slide'>";
+                                        echo "<img src = 'img/Galeria/sra-2008/$imagenes' width = '100%'></img>";
+                                        echo "</div>";
+                                    }
+                                    $img++;
+                                    }
+                                }
+                                closedir($puntero);
+                            ?>
                         </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" id ="cerrar" data-dismiss="modal">Cerrar</button>
-                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id ="cerrar" data-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
-        <!-- Modal -->
+    </div>
+     <!-- MODAL FIN -->
+
     <div class="section-wrapper-images">
         <h2 class="text-center txt-pink title-great font-60 aniview"  data-av-animation="flipInY">Galería de imágenes</h2>
         <div class="container-fluid not-padding-col">
@@ -733,10 +441,12 @@
         </div>
     </footer>
     <script src="js/jquery.js"></script>
+    <script src="js/modernizr.js"></script>
     <script src="js/jquery.aniview.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/thumbnail-slider.js"></script>  
+  <!--   <script src="js/thumbnail-slider.js"></script>   -->
     <script src ="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.0/jquery.flexslider.js"></script>
 </body>
 
 
