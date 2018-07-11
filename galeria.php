@@ -145,7 +145,44 @@
                 <!-- <div class="modal-header">
                 </div> -->
                 <div class="modal-body">
-                   
+                    <div class="slider-wrapper">
+                        <div class="slider">
+                        <?php
+                            $puntero = opendir("img/Galeria/sra-2008");
+                            $img = 0;
+                            $num = 0;
+                            while(false!==($imagenes=readdir($puntero))){
+                                if($imagenes!= "." && $imagenes != ".."){
+                                if($img < 6){
+                                    if($num < 6){
+                                    echo "<input type='radio' name='slider' class='trigger' id='$num' checked='checked' />";
+                                    echo "<div class='slide'>";
+                                    echo "<figure class='slide-figure'>";
+                                    echo "<img class='slide-img' src = 'img/Galeria/sra-2008/$imagenes' width = '100%'></img>";
+                                    echo "</figure>";
+                                    echo "</div>";
+
+                                    }
+                                    $num++;
+                                }
+                                $img++;
+                                }
+                            }
+                            closedir($puntero);
+                        ?>
+                        </div>
+                        <ul class="slider-nav">
+                            <?php
+                             $value = 1;
+                             if($value < 7){
+                                 echo "<li class ='slider-nav__item'>";
+                                 echo "<label class='slider-nav__label' for='$value'>$value</label>";
+                                 echo "</li>";
+                             }
+                             $value++;
+                            ?>
+                        </ul>
+                    </div><!-- .slider-wrapper -->
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" id ="cerrar" data-dismiss="modal">Cerrar</button>
