@@ -180,7 +180,7 @@
         <h2 class="text-center txt-pink title-great font-60 aniview"  data-av-animation="flipInY">Galería de imágenes</h2>
         <div class="container-fluid not-padding-col">
             <div class="clearfix">
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 not-padding-col">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 not-padding-col">
                     <div class="hovereffect-galeria aniview"  data-av-animation="flipInX">
                         <img class="img-responsive" src="img/Galeria/sra-2008/principal-2008.jpg" alt="">
                         <div class="overlay">
@@ -189,7 +189,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 not-padding-col">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 not-padding-col">
                     <div class="hovereffect-galeria aniview"  data-av-animation="flipInX">
                         <img class="img-responsive" src="img/Galeria/sra-2009/principal-2009.jpg" alt="">
                         <div class="overlay">
@@ -198,7 +198,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 not-padding-col">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 not-padding-col">
                     <div class="hovereffect-galeria aniview"  data-av-animation="flipInX">
                         <img class="img-responsive" src="img/Galeria/sra-2010/fundacion/principal-2010.jpg" alt="">
                         <div class="overlay">
@@ -207,7 +207,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 not-padding-col">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 not-padding-col">
                     <div class="hovereffect-galeria aniview"  data-av-animation="flipInX">
                         <img class="img-responsive" src="img/Galeria/sra-2010/noche-final/principal-2010.jpg" alt="">
                         <div class="overlay">
@@ -216,7 +216,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 not-padding-col">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 not-padding-col">
                     <div class="hovereffect-galeria aniview"  data-av-animation="flipInX">
                         <img class="img-responsive" src="img/Galeria/sra-2012/candidatas/principal-2012.jpg" alt="">
                         <div class="overlay">
@@ -225,7 +225,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 not-padding-col">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 not-padding-col">
                     <div class="hovereffect-galeria aniview"  data-av-animation="flipInX">
                         <img class="img-responsive" src="img/Galeria/sra-2012/fundacion/principal-2012.jpg" alt="">
                         <div class="overlay">
@@ -234,7 +234,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 not-padding-col">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 not-padding-col">
                     <div class="hovereffect-galeria aniview"  data-av-animation="flipInX">
                         <img class="img-responsive" src="img/Galeria/sra-2012/noche-final/principal-2012.jpg" alt="">
                         <div class="overlay">
@@ -243,7 +243,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 not-padding-col">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 not-padding-col">
                     <div class="hovereffect-galeria aniview"  data-av-animation="flipInX">
                         <img class="img-responsive" src="img/Galeria/sra-2015/candidatas/principal-2015.jpg" alt="">
                         <div class="overlay">
@@ -252,7 +252,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 not-padding-col">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 not-padding-col">
                     <div class="hovereffect-galeria aniview"  data-av-animation="flipInX">
                         <img class="img-responsive" src="img/Galeria/sra-2015/fundacion/principal-2015.jpg" alt="">
                         <div class="overlay">
@@ -261,7 +261,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 not-padding-col">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 not-padding-col">
                     <div class="hovereffect-galeria aniview"  data-av-animation="flipInX">
                         <img class="img-responsive" src="img/Galeria/sra-2015/noche-final/principal-2015.jpg" alt="">
                         <div class="overlay">
@@ -270,7 +270,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 not-padding-col">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 not-padding-col">
                     <div class="hovereffect-galeria aniview"  data-av-animation="flipInX">
                         <img class="img-responsive" src="img/Galeria/sra-2016/candidatas/principal-2016.jpg" alt="">
                         <div class="overlay">
@@ -279,7 +279,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 not-padding-col">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 not-padding-col">
                     <div class="hovereffect-galeria aniview"  data-av-animation="flipInX">
                         <img class="img-responsive" src="img/Galeria/sra-2016/fundacion/principal-2016.jpg" alt="">
                         <div class="overlay">
@@ -288,7 +288,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 not-padding-col">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 not-padding-col">
                     <div class="hovereffect-galeria aniview"  data-av-animation="flipInX">
                         <img class="img-responsive" src="img/Galeria/sra-2016/noche-final/principal-2016.jpg" alt="">
                         <div class="overlay">
@@ -297,7 +297,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 not-padding-col">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 not-padding-col">
                     <div class="hovereffect-galeria aniview"  data-av-animation="flipInX">
                         <img class="img-responsive" src="img/Galeria/sra-2017/candidatas/principal-2017.jpg" alt="">
                         <div class="overlay">
@@ -306,7 +306,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 not-padding-col">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 not-padding-col">
                     <div class="hovereffect-galeria aniview"  data-av-animation="flipInX">
                         <img class="img-responsive" src="img/Galeria/sra-2017/fundacion/principal-2017.jpg" alt="">
                         <div class="overlay">
@@ -315,7 +315,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 not-padding-col">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 not-padding-col">
                     <div class="hovereffect-galeria aniview"  data-av-animation="flipInX">
                         <img class="img-responsive" src="img/Galeria/sra-2017/noche-final/principal-2017.jpg" alt="">
                         <div class="overlay">
