@@ -145,28 +145,7 @@
                 <!-- <div class="modal-header">
                 </div> -->
                 <div class="modal-body">
-                    <div class="slider">
-                        <div class="slider-control slide-left"><i class="fa fa-minus fa-2x"></i></div>
-                        <div class="slider-control slide-right"><i class="fa fa-plus fa-2x"></i></div>
-                    
-                        <div class="slide-box Gala2008 hidden">
-                            <?php
-                                $puntero = opendir("img/Galeria/sra-2008");
-                                $img = 0;
-                                while(false!==($imagenes=readdir($puntero))){
-                                    if($imagenes!= "." && $imagenes != ".."){
-                                    if($img < 6){
-                                        echo "<div class='slide'>";
-                                        echo "<img src = 'img/Galeria/sra-2008/$imagenes' width = '100%'></img>";
-                                        echo "</div>";
-                                    }
-                                    $img++;
-                                    }
-                                }
-                                closedir($puntero);
-                            ?>
-                        </div>
-                    </div>
+                   
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" id ="cerrar" data-dismiss="modal">Cerrar</button>
