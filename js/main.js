@@ -82,6 +82,9 @@ $(window).ready(function(){
 
 
 $( document ).ready(function() {
+
+    $(".slider input:first").attr( 'checked', 'checked' );
+    
     $(".slider-galeria").click(function(){
         var item = $(this).attr("id");
         console.log(item);

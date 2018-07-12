@@ -150,12 +150,12 @@
                         <?php
                             $puntero = opendir("img/Galeria/sra-2008");
                             $img = 0;
-                            $num = 0;
+                            $num = 1;
                             while(false!==($imagenes=readdir($puntero))){
                                 if($imagenes!= "." && $imagenes != ".."){
                                 if($img < 6){
-                                    if($num < 6){
-                                    echo "<input type='radio' name='slider' class='trigger' id='$num' checked='checked' />";
+                                    if($num < 7){
+                                    echo "<input type='radio' name='slider' class='trigger' id='$num'/>";
                                     echo "<div class='slide'>";
                                     echo "<figure class='slide-figure'>";
                                     echo "<img class='slide-img' src = 'img/Galeria/sra-2008/$imagenes' width = '100%'></img>";
@@ -173,13 +173,21 @@
                         </div>
                         <ul class="slider-nav">
                             <?php
-                             $value = 1;
-                             if($value < 7){
-                                 echo "<li class ='slider-nav__item'>";
-                                 echo "<label class='slider-nav__label' for='$value'>$value</label>";
-                                 echo "</li>";
-                             }
-                             $value++;
+                            $puntero = opendir("img/Galeria/sra-2008");
+                            $img = 1;
+                            $value = 1;
+                            while(false!==($imagenes=readdir($puntero))){
+                                if($img < 7){
+                                    if($value < 7){
+                                            echo "<li class ='slider-nav__item'>";
+                                            echo "<label class='slider-nav__label' for='$value'>$value</label>";
+                                            echo "</li>";
+                                    }
+                                    $value++;
+                                    }
+                                    $img++;
+                                }
+                                closedir($puntero);
                             ?>
                         </ul>
                     </div><!-- .slider-wrapper -->

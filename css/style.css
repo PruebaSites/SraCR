@@ -1093,8 +1093,9 @@ img {
   .trigger {
     display: none;
   }
-  
-  .slider, .slider-wrapper {
+
+
+  .slider,.slider-wrapper{
     position: relative;
     height: 250px;
   }
